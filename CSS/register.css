@@ -1,0 +1,29 @@
+.body-container {
+  display: flex;
+  background-color: #ffff;
+  width: 100%;
+  height: 100vh;
+}
+.left-body {
+  width: 100%;
+  height: auto;
+  background-color: brown;
+}
+.right-body {
+  width: 100%;
+  height: auto;
+  padding: 24px;
+}
+.row {
+    display: flex;
+    width: 100%;
+}
+.col{
+  width: 260px;
+  height: 228px;
+  background-color: #ffff;
+}
+.image-block{
+    width: 260px;
+    height: 228px;
+}

@@ -1,0 +1,123 @@
+.header {
+  display: flex;
+  gap: 12px;
+  padding: 24px 24px;
+}
+hr {
+  margin: 24px 24px;
+  background-color: #d0d5dd;
+}
+a {
+  text-decoration: none;
+  color: #344054;
+}
+.title {
+  height: 38px;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 38px;
+  letter-spacing: 0%;
+}
+.header-title {
+  display: flex;
+  align-items: center;
+  padding: 24px 24px;
+  justify-content: space-between;
+}
+
+.block-button {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.btn-cancel {
+  width: 59px;
+  height: 40px;
+  padding-top: 10px;
+  padding-right: 16px;
+  padding-bottom: 10px;
+  padding-left: 16px;
+  gap: 8px;
+  border-radius: 8px;
+  border-width: 1px;
+  border: 1px solid #d0d5dd;
+}
+.btn-save-account {
+  width: 120px;
+  height: 40px;
+  border-radius: 8px;
+  background-color: #039855;
+  color: #ffff;
+  border: none;
+}
+
+/* css phần thân  */
+.body-container {
+  display: flex;
+}
+.left-body {
+  padding: 24px 32px;
+  width: 288px;
+}
+.list-link {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.block-link {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.number-course {
+  font-size: 16px;
+  padding: 6px 12px;
+  border-radius: 16px;
+  background-color: #f2f4f7;
+  text-align: center;
+}
+
+/* phải */
+.body-right {
+  width: calc(100% - 314px);
+  padding: 24px 24px;
+  border-radius: 8px;
+  box-shadow: 4px 4px 12px 4px rgba(0, 0, 0, 0.08);
+}
+.header-right {
+  padding: 24px 24px;
+  border-bottom: 2px solid #b4afaf;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.icon-upload-img {
+  background-color: #f2f4f7;
+  color: #344054;
+  border-radius: 50%;
+  border: 3px solid #f9fafb;
+  width: 24px;
+  height: 24px;
+  transform: translateY(6px);
+}
+.btn-upload-file {
+  text-align: center;
+  padding: 8px;
+  border-radius: 8px;
+  border: 1px solid #d0d5dd;
+}
+.btn-save-class-schedule {
+  text-align: center;
+  width: 150px;
+  height: 45px;
+  background-color: #EFF8FF;
+  color: Blue;
+  font-weight: 500;
+  padding: 8px;
+  border-radius: 8px;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0%;
+  border: none;
+}

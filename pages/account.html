@@ -25,57 +25,56 @@
                         <div class="list-link">
                           <div class="link">
                             <ion-icon class="icon" name="people-outline"></ion-icon>
-                            <p>Tài khoản</p>
+                            <a href="">Tài khoản</a>
                           </div>
                           <div class="link">
                             <img class="icon" src="../assets/icon/hand-icon.png" alt="">
-                            <p>Đối tác</p>
+                            <a href="">Đối tác</a>
                           </div>
                           <div class="link">
                             <img class="icon" src="../assets/icon/Video-elearning.png" alt="">
-                            <p>Khóa học (E-learning)</p>
+                            <a href="">Khóa học (E-learning)</a>
                           </div>
                           <div class="link">
                             <img class="icon" src="../assets/icon/class-icon.png" alt="">
-                            <p>Lớp học offline</p>
+                            <a href="">Lớp học offline</a>
                           </div>
                           <div class="link">
                             <img class="icon" src="../assets/icon/Exam-icon.png" alt="">
-                            <p>Kỳ thi</p>
+                            <a href="">Kỳ thi</a>
                           </div>
                           <div class="link">
                             <img class="icon" src="../assets/icon/certificate-icon.png" alt="">
-                            <p>Chứng chỉ</p>
+                            <a href=""p>Chứng chỉ</a>
                           </div>
                           <div class="link">
                             <img class="icon" src="../assets/icon/report-icon.png" alt="">
-                            <p>Báo cáo tài chính</p>
+                            <a href="">Báo cáo tài chính</a>
                           </div>
                           <div class="link">
                             <img class="icon" src="../assets/icon/Buildings-icon.png" alt="">
-                            <p>Cơ sở hạ tầng</p>
+                            <a href="">Cơ sở hạ tầng</a>
                           </div>
                           <div class="link">
                             <img class="icon" src="../assets/icon/news-icon.png" alt="">
-                            <p>Tin tức, thông báo</p>
+                            <a href="">Tin tức, thông báo</a>
                           </div>
                           <div class="link">
                             <img class="icon" src="../assets/icon/setting-icon.png" alt="">
-                            <p>Cấu hình</p>
+                            <a href="">Cấu hình</a>
                           </div>
-                          
                         </div>
                     </div>
                     <div class="body-bottom-nav">
                         <div class="logo-user">
-
+                            <img src="../assets/image/avatar-login.png" alt="">
                         </div>
                         <div class="body-name-email">
                             <div class="name-out">
                                 <p class="name-userLogin">Phạm Tiến Hưng</p>
                                 <img class="log-out" src="../assets/icon/Icon-out.png" alt="">
                             </div>
-                            <div class="email-user-login">hungpham772006@gmail.com</div>
+                            <div class="email-user-login">namtran94@phenikaa.com</div>
                         </div>
                     </div>
                 </div>
@@ -88,6 +87,8 @@
                         <img src="../assets/icon/home-icon.png" alt="">
                         <img src="../assets/icon/chevron-right-icon.png" alt="">
                         <p>Tài khoản</p>
+                        <img src="../assets/icon/chevron-right-icon.png" alt="">
+                        <p>Danh sách tài khoản</p>
                         <img src="../assets/icon/chevron-right-icon.png" alt="">
                     </div>
                     <!-- Thêm tài khoản -->
@@ -102,7 +103,7 @@
                                 <option value="">hưng</option>
                                 <option value="">Hoàn</option>
                             </select>
-                            <button class="btn-add-account"> + Thêm tài khoản</button>
+                            <button class="btn-add-account" id="btn-add-account"> + Thêm tài khoản</button>
                         </div>
                     </div>
                 </header>
@@ -145,13 +146,381 @@
                     </div>
                 </div>
                 <!-- Bảng dữ liệu  -->
-                <table>
-                    <!--  Thêm dữ liệu vào đây -->
-                </table>
+                <div class="table-container">
+                    <table class="user-table">
+                      <thead>
+                        <tr>
+                          <th class="header-table"><input type="checkbox" /></th>
+                          <th class="header-table">Mã tài khoản</th>
+                          <th class="header-table">Họ và tên</th>
+                          <th class="header-table">Email</th>
+                          <th class="header-table">Năm sinh</th>
+                          <th class="header-table">Số điện thoại</th>
+                          <th class="header-table">Quê quán</th>
+                          <th class="header-table">Loại</th>
+                          <th class="header-table">Hành động</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr class="row">
+                          <td><input type="checkbox" /></td>
+                          <td>TK002341</td>
+                          <td>Nguyễn Văn Nam</td>
+                          <td>namnguyen2@gmail.com</td>
+                          <td>30/08/2000</td>
+                          <td>0369852147</td>
+                          <td>Hà Nội</td>
+                          <td><span class="badge sinhvien">Sinh viên</span></td>
+                          <td class="actions">
+                            <img class="trashIcon" src="../assets/icon/trash-icon.png" alt="Xoá" title="Xoá">
+                            <img class="btnEdit" src="../assets/icon/edit-icon.png" alt="Sửa" title="Sửa">
+                          </td>
+                        </tr>
+                        <tr class="row">
+                            <td><input type="checkbox" /></td>
+                            <td>TK002341</td>
+                            <td>Nguyễn Văn Nam</td>
+                            <td>namnguyen2@gmail.com</td>
+                            <td>30/08/2000</td>
+                            <td>0369852147</td>
+                            <td>Hà Nội</td>
+                            <td><span class="badge sinhvien">Sinh viên</span></td>
+                            <td class="actions">
+                              <img class="trashIcon" src="../assets/icon/trash-icon.png" alt="Xoá" title="Xoá">
+                              <img class="btnEdit" src="../assets/icon/edit-icon.png" alt="Sửa" title="Sửa">
+                            </td>
+                          </tr>
+                          <tr class="row">
+                            <td><input type="checkbox" /></td>
+                            <td>TK002341</td>
+                            <td>Nguyễn Văn Nam</td>
+                            <td>namnguyen2@gmail.com</td>
+                            <td>30/08/2000</td>
+                            <td>0369852147</td>
+                            <td>Hà Nội</td>
+                            <td><span class="badge sinhvien">Sinh viên</span></td>
+                            <td class="actions">
+                              <img class="trashIcon" src="../assets/icon/trash-icon.png" alt="Xoá" title="Xoá">
+                              <img class="btnEdit" src="../assets/icon/edit-icon.png" alt="Sửa" title="Sửa">
+                            </td>
+                          </tr>
+                          <tr class="row">
+                            <td><input type="checkbox" /></td>
+                            <td>TK002341</td>
+                            <td>Nguyễn Văn Nam</td>
+                            <td>namnguyen2@gmail.com</td>
+                            <td>30/08/2000</td>
+                            <td>0369852147</td>
+                            <td>Hà Nội</td>
+                            <td><span class="badge sinhvien">Sinh viên</span></td>
+                            <td class="actions">
+                              <img class="trashIcon" src="../assets/icon/trash-icon.png" alt="Xoá" title="Xoá">
+                              <img class="btnEdit" src="../assets/icon/edit-icon.png" alt="Sửa" title="Sửa">
+                            </td>
+                          </tr>
+                          <tr class="row">
+                            <td><input type="checkbox" /></td>
+                            <td>TK002341</td>
+                            <td>Nguyễn Văn Nam</td>
+                            <td>namnguyen2@gmail.com</td>
+                            <td>30/08/2000</td>
+                            <td>0369852147</td>
+                            <td>Hà Nội</td>
+                            <td><span class="badge sinhvien">Sinh viên</span></td>
+                            <td class="actions">
+                              <img class="trashIcon" src="../assets/icon/trash-icon.png" alt="Xoá" title="Xoá">
+                              <img class="btnEdit" src="../assets/icon/edit-icon.png" alt="Sửa" title="Sửa">
+                            </td>
+                          </tr>
+                          <tr class="row">
+                            <td><input type="checkbox" /></td>
+                            <td>TK002341</td>
+                            <td>Nguyễn Văn Nam</td>
+                            <td>namnguyen2@gmail.com</td>
+                            <td>30/08/2000</td>
+                            <td>0369852147</td>
+                            <td>Hà Nội</td>
+                            <td><span class="badge sinhvien">Sinh viên</span></td>
+                            <td class="actions">
+                              <img class="trashIcon" src="../assets/icon/trash-icon.png" alt="Xoá" title="Xoá">
+                              <img class="btnEdit" src="../assets/icon/edit-icon.png" alt="Sửa" title="Sửa">
+                            </td>
+                          </tr>
+                          <tr class="row">
+                            <td><input type="checkbox" /></td>
+                            <td>TK002341</td>
+                            <td>Nguyễn Văn Nam</td>
+                            <td>namnguyen2@gmail.com</td>
+                            <td>30/08/2000</td>
+                            <td>0369852147</td>
+                            <td>Hà Nội</td>
+                            <td><span class="badge sinhvien">Sinh viên</span></td>
+                            <td class="actions">
+                              <img class="trashIcon" src="../assets/icon/trash-icon.png" alt="Xoá" title="Xoá">
+                              <img class="btnEdit" src="../assets/icon/edit-icon.png" alt="Sửa" title="Sửa">
+                            </td>
+                          </tr>
+                        <!-- Thêm dòng khác tại đây -->
+                      </tbody>
+                    </table>
+                     <!-- PHÂN TRANG -->
+                    <div class="pagination">
+                      <button class="page-btn prev" disabled>Trang trước</button>
+                      <span class="page-info">Trang 1 trong 152</span>
+                      <button class="page-btn next">Trang sau</button>
+                    </div>
+                   </div>
+                  </div>
             </div>
         </div>
     </div>
-    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <!-- Modal xoá thành viên -->
+    <div style="display: none" id="modal-delete" class="modal-overlay">
+        <div class="modal">
+          <div class="body-modal">
+            <h2>Xác nhận</h2>
+             <p>Bạn có chắc chắn muốn xóa tài khoản này không ?</p>
+            <div class="modal-buttons">
+            <button class="btn-cancel cancel">Hủy</button>
+            <button class="btn-delete">Xóa tài khoản</button>
+          </div>
+          </div>
+        </div>
+      </div>
+    <div style="display: none;"  class="modal-add-account" id="modal-add-account">
+        <div class="modal-add">
+          <div class="body-modals">
+            <header class="header-modal-add">
+                <p class="title-add">Thêm tài khoản</p>
+                <img class="out-icon" src="../assets/icon/_Button-base-out-icon.png" alt="">
+            </header>
+            <div class="body-modal-add">
+              <!-- body 1 của form -->
+              <div>
+               <form action="">
+                <div class="body-form1" style="display: flex;">
+                  <div class="left-body-modal1">
+                    <div>Thông tin chung</div>
+                    <p>Cập nhật thông tin chung về tài khoản</p>
+                  </div>
+                  <div class="right-body-modal1">
+                    <div class="header-form">
+                      <div><img src="../assets/image/Avatar-account.png" alt=""></div>
+                      <div class="up-loand-file">
+                        <div><img class="icon-upload-img"  src="../assets/icon/upload-cloud-icon.png" alt=""></div>
+                        <div>
+                          <p class="lorem"> <a class="upload-img" href="">Click to upload</a>   or drag and drop <br> SVG, PNG, JPG or GIF (max. 400x400px)</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="body1">
+                      <div class="block block-input">
+                        <label for="">Họ và tên</label>
+                        <input type="text" placeholder="Nhập tên của bạn">
+                      </div>
+                      <div style="display: flex; justify-content: space-between;">
+                        <div class=" block block-input">
+                          <label for="">Ngày sinh</label>
+                          <input type="text" placeholder="Nhập tên của bạn">
+                        </div> 
+                        <div  class=" block block-input">
+                          <label for="">Họ và tên</label>
+                          <input type="date" >
+                        </div>
+                      </div>
+                      <div style="display: flex; justify-content: space-between;">
+                        <div class=" block block-input">
+                          <label for="">Email</label>
+                         <div class="block-email">
+                          <img class="mail-icon" src="../assets/icon/mail-icon.png" alt="">
+                          <input class="input-email" type="email" placeholder="Nhập email của bạn">
+                         </div>
+                        </div>
+                        <div  class=" block block-input">
+                          <label for="">Họ và tên</label>
+                          <input type="date" >
+                        </div>
+                      </div>
+                      <div class="block block-input">
+                        <label for="">Họ và tên</label>
+                        <select name="" id="">
+                          <option value="">Sinh viên</option>
+                          <option value="">Quản lí đào tạo</option>
+                          <option value="">Trung tâm</option>
+                        </select>
+                      </div>
+                    </div>
+                    </div>
+                  </div>
+                    <div class="body-form2" style="display: flex;">
+                      <div class="left-body-modal2">
+                        <div>Thông tin sinh viên</div>
+                        <p>Cập nhật thông tin liên quan đến loại tài khoản</p>
+                      </div>
+                      <div class="right-body-modal2">
+                        <div class="body2">
+                          <label for="">Trường</label>
+                          <select class="select-Specialized" name="" id="">
+                            <option value="">PTIT</option>
+                            <option value="">Hust</option>
+                            <option value="">Phenikaa</option>
+                           </select>
+                          <div style="display: flex; justify-content: space-between;">
+                            <div class=" block block-input">
+                              <label for="">Mã sinh viên</label>
+                              <input type="text" placeholder="Nhập tên của bạn">
+                            </div> 
+                            <div  class=" block block-input">
+                              <label for="">Khoá học</label>
+                              <input type="text" >
+                            </div>
+                          </div>
+                          <div class="block block-input">
+                            <label for="">Chuyên nghành </label>
+                            <select class="select-Specialized" name="" id="">
+                              <option value="">CNTT</option>
+                              <option value="">Maketting</option>
+                              <option value="">Mạng CNN</option>
+                            </select>
+                          </div>
+                        </div>
+                      </div>
+                  </div>
+                </tbody>
+                <tfoot>
+                 <div class="block-button">
+                  <button class="btn-cancel">Huỷ</button>
+                  <button class="btn-add-account">Thêm tài khoản</button>
+                 </div>
+                </tfoot>
+               </form>
+              </div>
+            </div>
+        </div>
+        </div>
+    </div>
+    <!-- Cập nhật thông tin tài khoản -->
+    <div style="display: none;"  class="modal-edit-account" id="modal-edit-account">
+      <div class="modal-add">
+        <div class="body-modals">
+          <header class="header-modal-add">
+              <p class="title-add">Cập nhật thông tài khoản</p>
+              <img class="out-icon" src="../assets/icon/_Button-base-out-icon.png" alt="">
+          </header>
+          <div class="body-modal-add">
+            <!-- body 1 của form -->
+            <div>
+             <form action="">
+              <div class="body-form1" style="display: flex;">
+                <div class="left-body-modal1">
+                  <div>Thông tin chung</div>
+                  <p>Cập nhật thông tin chung về tài khoản</p>
+                </div>
+                <div class="right-body-modal1">
+                  <div class="header-form">
+                    <div><img src="../assets/image/Avatar-account.png" alt=""></div>
+                    <div class="up-loand-file">
+                      <div><img class="icon-upload-img"  src="../assets/icon/upload-cloud-icon.png" alt=""></div>
+                      <div>
+                        <p class="lorem"> <a class="upload-img" href="">Click to upload</a>   or drag and drop <br> SVG, PNG, JPG or GIF (max. 400x400px)</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="body1">
+                    <div class="block block-input">
+                      <label for="">Họ và tên</label>
+                      <input type="text" placeholder="Nhập tên của bạn">
+                    </div>
+                    <div style="display: flex; justify-content: space-between; ">
+                      <div class=" block block-input">
+                        <label for="">Ngày sinh</label>
+                        <input type="text" placeholder="Nhập tên của bạn">
+                      </div> 
+                      <div  class=" block block-input">
+                        <label for="">Họ và tên</label>
+                        <input type="date" >
+                      </div>
+                    </div>
+                    <div style="display: flex; justify-content: space-between; ">
+                      <div class=" block block-input">
+                        <label for="">Email</label>
+                       <div class="block-email">
+                        <img class="mail-icon" src="../assets/icon/mail-icon.png" alt="">
+                        <input class="input-email" type="email" placeholder="Nhập email của bạn">
+                       </div>
+                      </div>
+                      <div  class=" block block-input">
+                        <label for="">Họ và tên</label>
+                        <input type="date" >
+                      </div>
+                    </div>
+                    <div class="block block-input">
+                      <label for="">Họ và tên</label>
+                      <select name="" id="">
+                        <option value="">Sinh viên</option>
+                        <option value="">Quản lí đào tạo</option>
+                        <option value="">Trung tâm</option>
+                      </select>
+                    </div>
+                  </div>
+                  </div>
+                </div>
+                  <div class="body-form2" style="display: flex;">
+                    <div class="left-body-modal2">
+                      <div>Thông tin sinh viên</div>
+                      <p>Cập nhật thông tin liên quan đến loại tài khoản</p>
+                    </div>
+                    <div class="right-body-modal2">
+                      <div class="body2">
+                        <label for="">Trường</label>
+                        <select class="select-Specialized" name="" id="">
+                          <option value="">PTIT</option>
+                          <option value="">Hust</option>
+                          <option value="">Phenikaa</option>
+                         </select>
+                        <div style="display: flex; justify-content: space-between; padding: 10px 0;">
+                          <div class=" block block-input">
+                            <label for="">Mã sinh viên</label>
+                            <input type="text" placeholder="Nhập tên của bạn">
+                          </div> 
+                          <div  class=" block block-input">
+                            <label for="">Khoá học</label>
+                            <input type="text" >
+                          </div>
+                        </div>
+                        <div class="block block-input">
+                          <label for="">Chuyên nghành </label>
+                          <select class="select-Specialized" name="" id="">
+                            <option value="">CNTT</option>
+                            <option value="">Maketting</option>
+                            <option value="">Mạng CNN</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+              </tbody>
+              <tfoot>
+               <div class="block-button">
+                <button class="btn-cancel">Huỷ</button>
+                <button class="btn-save-account">Lưu cập nhật</button>
+               </div>
+              </tfoot>
+             </form>
+            </div>
+          </div>
+      </div>
+      </div>
+  </div>
+  <!-- Thông báo xoá tài khoản thành công -->
+  <div style="display: none;" class="toast" id="toast">
+    <div class="toast-icon">
+      <img class="trash-icon" src="../assets/icon/trash-2-icon.png" alt="">
+    </div>
+    <div class="toast-text">Đã xoá tài khoản</div>
+  </div>
+<script src="../js/account.js"></script>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
 </html>

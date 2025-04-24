@@ -85,6 +85,21 @@ body {
     border-radius: 8px;
 }
 
+.form .remember-forget-password {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 24px;
+}
+
+.form .remember-forget-password .remember-forget-password-right a {
+    text-decoration: none;
+    color: #932F08;
+}
+
+.remember-forget-password-right a:hover {
+    color: #5c1f06;
+}
+
 .form .btnLogin {
     border-radius: 8px;
     width: 100%;

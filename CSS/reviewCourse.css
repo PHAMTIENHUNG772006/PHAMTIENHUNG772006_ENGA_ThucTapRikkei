@@ -1,0 +1,26 @@
+.header-view {
+  display: flex;
+  justify-content: space-between;
+  padding: 24px 24px;
+}
+
+.title-header {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 28px;
+  letter-spacing: 0%;
+  color: #101828;
+}
+.btn-out {
+  width: 72px;
+  height: 40px;
+  border-radius: 8px;
+  border-width: 1px;
+  gap: 8px;
+  padding-top: 10px;
+  padding-right: 16px;
+  padding-bottom: 10px;
+  padding-left: 16px;
+  background-color: #ffffff;
+  border: 1px solid #d0d5dd;
+}
